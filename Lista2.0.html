@@ -10,12 +10,11 @@
     <h1>Friend List</h1>
     <p>Input friend's names</p>
     <input type="text" name="nimet" id="nimet" placeholder="Friend's name">
-    <button>Add Friends</button>
-    <button>Remove Friends</button>
-    <button>Sort</button>
+    <button onclick="addFriend(document.getElementById('nimet').value)">Add Friends</button>
+    <button onclick="removeFriend()">Remove Friends</button>
+    <button onclick="sortFriends()">Sort</button>
     
-
-    <h3 id="nimet"></h3>
+    <div id="printti"></div>
 
     <script src="lista2.0.js"></script>
 </body>

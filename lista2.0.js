@@ -1,9 +1,23 @@
-function nimilista(nimi) {
-    let nimet = '';
+let myFriends = [];
+
+function addFriend(x){
+    console.log(x);
+    myFriends.push(x);
+    printFriends();
 }
 
-function tulostaNimet(nimet){
-    document.getElementById('nimet').innerHTML = "nimet";
+function removeFriend(){
+
 }
 
-tulostaNimet (nimet);
+function sortFriends(){
+    
+}
+
+function printFriends(){
+    let html = '';
+    for(let i=0; i < myFriends.length; i++){
+        html = html + myFriends[i] + '<br>';
+    }
+    document.getElementById('printti').innerHTML = html;
+}
