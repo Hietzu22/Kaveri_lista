@@ -1,5 +1,13 @@
 let myFriends = [];
 
+var input = document.getElementById("nimet");
+input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("add").click();
+    }
+});
+
 function addFriend(x){
     console.log(x);
     myFriends.push(x);
@@ -7,11 +15,13 @@ function addFriend(x){
 }
 
 function removeFriend(){
-
+    myFriends.pop();
+    printFriends();
 }
 
 function sortFriends(){
-    
+    myFriends.sort();
+    printFriends();
 }
 
 function printFriends(){
